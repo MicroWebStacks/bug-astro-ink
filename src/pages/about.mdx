@@ -5,6 +5,10 @@ description: 'There is a simple secret to building a faster website — just shi
 import DefaultPageLayout from '$/layouts/default.astro'
 import Prose from '$/components/Prose.astro'
 
+# This does work '{frontmatter.title}'
+
+# This does not work {title}
+
 <DefaultPageLayout content={{ title: frontmatter.title, description: frontmatter.description }}>
     <Prose>
             Astro-Ink is a crisp, minimal, personal blog theme for Astro, that shows the capability of statically built sites - offering all the goodness and DX of the modern JS ecosystem without actually shipping any JS by default. It's built by...
